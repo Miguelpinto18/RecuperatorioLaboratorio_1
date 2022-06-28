@@ -53,7 +53,6 @@
 		utest_varAux++;							\
 	}											\
 }
-
 //-------utest_assert---with---message-------
 
 #define utest_assertEqualsIntMsg(A,B,C){ if(A!=B){ utest_print2("assert equals failed '%d' != '%d'\r\n",A,B);utest_print1("%s\r\n",C); utest_flagTestError=1; utest_lineTestError = __LINE__;  utest_fileTestError = __FILENAME__;return; } }
